@@ -1,3 +1,9 @@
+<?php
+if($_SESSION['login']){
+   header("location:home.php");
+   die;
+}
+?>
 <!DOCTYPE html>
 
 <head>
