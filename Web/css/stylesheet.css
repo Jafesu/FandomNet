@@ -1,5 +1,74 @@
-p{
+body {
+    background-image: url("../img/fandomback2.jpg");
+}
 
-    color: blue;
+#topfandoms {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border: 20px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+}
 
+#thetopfandoms {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.fandoms:hover {
+    height: 100px;
+}
+
+.fandoms1:hover {
+    height: 65px;
+}
+
+.center {
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 900px;
+    /*  background: rgba(255, 255, 255, 0.4);*/
+}
+
+#login {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 50px;
+    font-size: 50px;
+}
+
+.input {
+    width: 500px;
+    height: 50px;
+    font-size: 24px;
+}
+
+input.submit,
+#button {
+    height: 40px;
+    width: 150px;
+}
+
+#button {
+    margin-left: 190px;
 }
