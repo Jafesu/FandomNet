@@ -29,7 +29,7 @@ if(isset($_SESSION['login'])){
         </span>
 
 
-        <form id="login" action="login.php" method="post" onsubmit="return validate()">
+        <form id="login" action="login.php" method="post">
             Username: <br>
             <input type="text" name="email" class="input" id="email" accesskey="u"></br>
             </br>
