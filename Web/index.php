@@ -1,14 +1,18 @@
 <?php
-if($_SESSION['login']){
-   header("location:home.php");
-   die;
-}
+/*session_start();
+if(isset($_SESSION['login'])){
+   if($_SESSION['login']){
+       header("location:home.php");
+       die;
+   }
+}*/
 ?>
 <!DOCTYPE html>
 
 <head>
     <title>FandomNet - Login</title>
     <link rel="stylesheet" type="text/css" href="css\stylesheet.css" />
+    <script type="text/javascript" src="/js/functions.js" ></script>
 </head>
 
 <body>
@@ -20,19 +24,18 @@ if($_SESSION['login']){
             <img src="img\disney.svg" height="50px" class="fandoms">
             <img src="img\starwars.svg" height="50px" class="fandoms">
             <img src="img\sherlock.png" height="50px" class="fandoms1">
-            <img src="img\supernatural.png" height="50px" class="fandoms1">
+            <img src="img\supernatural.png" height="50px"class="fandoms1">
             <img src="img\harry potter.svg" height="60px" class="fandoms">
         </span>
 
 
-        <form id="login">
+        <form id="login" action="login.php" method="post" onsubmit="return validate()">
             Username: <br>
-            <input type="text" name="username" class="input" id="username" accesskey="u"></br>
-            </br>
+            <input type="text" name="email" class="input" id="email" accesskey="u"></br>
             </br>
             Pasword:<br>
             <input type="password" name="password" class="input" id="password" accesskey="p"></br>
-            <input type="submit" id="submit" class="submit" value="Login" /> <input type="button" onclick="location.href = 'register.php';" value="Register" id="button" />
+            <input type="submit" id="submit" class="submit" value="Login" /> <input type="button" onclick="redirecttoregister()" value="Register" id="button" />
         </form>
     </div>
 </body>
